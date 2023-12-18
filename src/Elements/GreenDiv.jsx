@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 
 const GreenDiv = styled.div`
     height: 100%;
