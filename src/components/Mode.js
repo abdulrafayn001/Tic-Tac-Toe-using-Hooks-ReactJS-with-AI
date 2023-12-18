@@ -9,6 +9,19 @@ const Credit=styled.div`
     font-family: 'Itim', cursive;
     font-size:17px;
 `
+
+const Link = styled.a`
+    color: white;
+    font-family: 'Itim', cursive;
+    font-size: 17px;
+    text-decoration: underline;
+    cursor: pointer; 
+    
+    &:hover {
+        color: #39ff14;
+    }
+`;
+
 function Mode({ clickHumanBtn, clickAIBtn}) {
     return (
         <>
@@ -16,7 +29,7 @@ function Mode({ clickHumanBtn, clickAIBtn}) {
             <GreenButton onClick={clickHumanBtn}>Two Player</GreenButton>
             <GreenButton onClick={clickAIBtn}>One Player</GreenButton>
             <Credit>
-                By Abdulrafay
+                By <Link href='https://www.linkedin.com/in/abdulrafayn001/' target='blank'>Abdul Rafay</Link>
             </Credit>
         </>
     )
